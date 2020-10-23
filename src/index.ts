@@ -3,7 +3,7 @@ import { __prod__ } from "./constants";
 import express from "express";
 import { ApolloServer } from "apollo-server-express";
 import { buildSchema } from "type-graphql";
-import { CharacterResolver } from "./resolvers/characters";
+import { CharacterResolver } from "./resolvers/CharacterResolver";
 import { createConnection } from "typeorm";
 import { Character } from "./entities/Characters";
 
