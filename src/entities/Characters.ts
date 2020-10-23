@@ -49,9 +49,9 @@ export class Character extends BaseEntity {
 
   @Field(() => String)
   @Column({ type: "bigint" })
-  totalXP: bigint;
+  totalXP: number;
 
-  @Field(() => Int)
-  @Column()
+  @Field(() => String)
+  @Column({ type: "bigint" })
   dailyXP: number;
 }

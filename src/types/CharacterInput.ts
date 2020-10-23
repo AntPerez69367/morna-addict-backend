@@ -1,11 +1,6 @@
-import { Field, InputType, Int } from "type-graphql";
+import { Field, Int } from "type-graphql";
 
-@InputType()
 export class CharacterInput {
-  id!: number;
-  createdAt = new Date();
-  updatedAt = new Date();
-
   @Field(() => String)
   name!: string;
 
@@ -25,8 +20,8 @@ export class CharacterInput {
   mana: number;
 
   @Field(() => String)
-  totalXP: bigint;
+  totalXP: number;
 
-  @Field(() => Int)
+  @Field(() => String)
   dailyXP: number;
 }
